@@ -20,7 +20,7 @@ async function color () {
 }
 bot.on('ready', () => {
     color();
-    bot.user.setPresence({ game: { name: `Господина Молотка`, type: 2 } }).catch();
+    bot.user.setPresence({ game: { name: `На ноги Сео`, type: 3 } }).catch();
 });
 
 
@@ -31,7 +31,7 @@ bot.on('message', (message) => {
 const args = message.content.slice(prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 
-if(command === "say" && ['296688864091701248', '301020093247127552'].includes(message.author.id)){
+if(command === "say" && ['248521740945195008', '301020093247127552'].includes(message.author.id)){
     const sayMessage = args.join(" ");
     message.delete().catch(O_o=>{});
     message.channel.send(sayMessage);
@@ -45,7 +45,7 @@ if(command === "smile" && ['248521740945195008'].includes(message.author.id)){
    let member = message.mentions.members.first();
    if(!member) member = message.member;
 
-   let replies = [`${member} не хей(натурал) `, `${member} на 1% хей 🌈`, `${member} на 2% хей 🌈`, `${member} на 3% хей 🌈`, `${member} на 4% хей 🌈`, `${member} на 5% хей 🌈`, `${member} на 10% хей 🌈`, `${member} на 15% хей 🌈`,  `${member} на 20% хей 🌈`, `${member} на 25% хей 🌈`, `${member} на 30% хей 🌈`, `${member} на 35% хей 🌈`, `${member} на 40% хей 🌈`, `${member} на 45% хей 🌈`, `${member} на 50% хей 🌈`, `${member} на 55% хей 🌈`, `${member} на 60% хей 🌈`, `${member} на 65% хей 🌈`, `${member} на 70% хей 🌈`, `${member} на 75% хей 🌈`, `${member} на 80% хей 🌈`, `${member} на 85% хей 🌈`, `${member} на 90% хей 🌈`, `${member} на 95% хей 🌈`, `${member} на 100% хей 🌈`, `${member} на 1488% хей 🌈`];
+   let replies = [`${member} не гей(натурал) `, `${member} на 1% гей 🌈`, `${member} на 2% гей 🌈`, `${member} на 3% гей 🌈`, `${member} на 4% гей 🌈`, `${member} на 5% гей 🌈`, `${member} на 10% гей 🌈`, `${member} на 15% гей 🌈`,  `${member} на 20% гей 🌈`, `${member} на 25% гей 🌈`, `${member} на 30% гей 🌈`, `${member} на 35% гей 🌈`, `${member} на 40% гей 🌈`, `${member} на 45% гей 🌈`, `${member} на 50% гей 🌈`, `${member} на 55% гей 🌈`, `${member} на 60% гей 🌈`, `${member} на 65% гей 🌈`, `${member} на 70% гей 🌈`, `${member} на 75% гей 🌈`, `${member} на 80% гей 🌈`, `${member} на 85% гей 🌈`, `${member} на 90% гей 🌈`, `${member} на 95% гей 🌈`, `${member} на 100% гей 🌈`, `${member} на 1488% гей 🌈`];
    let result = Math.floor((Math.random() * replies.length));
    let question = args.join(" "); 
 
@@ -175,9 +175,9 @@ if (message.content.startsWith(`${prefix}help`)){
     .setTitle("**КОМАНДЫ БОТА**")
     .setColor('RANDOM')
     .addField("Спиздить аву:", "`s!avatar <Пользователь>`")
-    .addField("Эмоции:", "`s!kiss <Пользователь>;`\n`s!slap <Пользователь>;`\n`s!hug <Пользователь>;`\n`s!kill <Пользователь>;`\n`s!suicide;`\n`s!cry;`\n`s!happy.`")
-    .addField("Тест на хея:", "`s!gay <Пользователь>`")
-    .addField("Измеритель-Совместимости:", "`s!ship <Пользователь>`")
+    .addField("Реакции:", "`s!kiss <Пользователь>;`\n`s!slap <Пользователь>;`\n`s!hug <Пользователь>;`\n`s!kill <Пользователь>;`\n`s!suicide;`\n`s!cry;`\n`s!happy.`")
+    .addField("Тест на гея:", "`s!gay <Пользователь>`")
+    .addField("Совместимость:", "`s!ship <Пользователь>`")
     .addField("Измерить пенис:", "`s!penis <Пользователь>`")
     .addField("Призвать участника:", "`s!summon <Пользователь>`")
    .setFooter('►СВЕРХКОНФА | s!help', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
