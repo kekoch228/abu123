@@ -388,6 +388,17 @@ if (message.content.startsWith(`${prefix}info`)){
    .setTimestamp(); 
     return message.channel.send(infoEmbed)
     }
+if (message.content.startsWith(`${prefix}info2`)){
+    
+    let info2Embed = new Discord.RichEmbed()
+    .setTitle(":arrow_right: ***ПРАВИЛА***")
+    .setColor("3767790")   
+    .setThumbnail('https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
+    .setDescription("```Markdown\n#Общие:```⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀:large_blue_diamond: ***Запрещено:*** :large_blue_diamond:\n:small_blue_diamond:Чересчур токсичное и неадекватное поведение.\n:small_blue_diamond:Спам и реклама в любой форме.\n:small_blue_diamond:Заниматься вымогательством и мошенничеством.\n:small_blue_diamond:Распространение чьей-либо личной информации.\n```Markdown\n#Голосовой чат:```⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀:large_blue_diamond: ***Запрещено:*** :large_blue_diamond:\n:small_blue_diamond:Использование программ для изменения голоса, создание сторонних           шумов и звуков, собственная музыка тоже запрещается.\n:small_blue_diamond:Переключаться между каналами, создавая многочисленные звуки           подключения и отключения.\n:small_blue_diamond:Включать демонстрацию экрана в любом канале кроме ***VIDEO-CHAT*** \n\n**Если у вас плохой микрофон, то выключайте его или ставьте — __Push to Talk.__**```Markdown\n#Текстовый чат:```⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀:large_blue_diamond: ***Запрещено:*** :large_blue_diamond:\n:small_blue_diamond:Отправлять шок-контент во всех чатах.\n:small_blue_diamond:Отправлять порнографию во всех чатах кроме ***#》nsfw***. \n:small_blue_diamond:Злоупотребление упоминаний через ***@***.\n\n**Если вам мешают уведомления, то всё это можно отключить в настройках.**```Markdown\n#Примечания:```\n***Незнание правил не освобождает вас от ответственности!\nАдминистратор вас забанит, если по его мнению вы приносите вред серверу.\nНе прикрывайтесь недочетами правил, этот список всегда можно дополнить.\nЕсли админ вас о чем-то просит, значит в этом есть необходимость.***"
+   .setFooter('►RULES', 'https://cdn.discordapp.com/attachments/428252979280478228/609937377955282964/FunDZNs_4.png')
+   .setTimestamp(); 
+    return message.channel.send(info2Embed)
+    }
 
 
     }    
