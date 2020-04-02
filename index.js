@@ -11,7 +11,7 @@ async function color () {
     forEachTimeout(colors, (color) => {
         bot.guilds.forEach((guild) => {
                 if (!stop.includes(guild.id)) {
-                let role = guild.roles.find('name', '🌈 ► Радуга');
+                let role = guild.roles.find('name', '✬ ›› Радужный');
                 if (role && role.editable) 
                     role.setColor(color);
             }  
