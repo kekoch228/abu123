@@ -337,11 +337,10 @@ if (message.content.startsWith(`${prefix}suicide`)) {
 if (message.content.startsWith(`${prefix}embed`)) {
 let embed = new RichEmbed();
 
-embed.setTitle(title);
-embed.setFooter(footer);
-embed.setColor(color);
+embed.setTitle('**➡️ РОЛИ**');
+embed.setFooter('►ROLES', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474');
+embed.setColor('397DEE');
 embed.setDescription(description);
-embed.addField(zagolovok, content);
 //и так далее 
 
 message.channel.send(embed);
