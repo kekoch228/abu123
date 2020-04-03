@@ -3,7 +3,9 @@ const fs = require("fs");
 const bot = new Discord.Client();
 const prefix = "s!";
 
-    bot.user.setPresence({ game: { name: `На ноги Сео`, type: 3 } }).catch();
+bot.on('ready', () => {
+    bot.user.setPresence({ game: { name: `стоны мувика`, type: 2 } }).catch();
+});
 
 
 bot.on('message', (message) => {
