@@ -345,7 +345,7 @@ if (message.content.startsWith(`${prefix}suicide`)) {
             .setColor('397DEE')
             .setThumbnail('https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
             .setFooter('►ROLES', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
-            .setTimestamp(); 
+            .setTimestamp() 
         message.channel.send({rolesembed});
   }
 
