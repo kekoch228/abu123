@@ -337,10 +337,10 @@ if (message.content.startsWith(`${prefix}suicide`)) {
 if (message.content.startsWith(`${prefix}embed`)) {
 let embed = new RichEmbed();
 
-embed.setTitle(title);
-embed.setFooter(footer);
+embed.setTitle(Ауе);
+embed.setFooter(ауе);
 embed.setColor(random);
-embed.setDescription(description);
+embed.setDescription(ауе);
 embed.addField(zagolovok, content);
 //и так далее 
 
