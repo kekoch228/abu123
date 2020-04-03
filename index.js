@@ -339,7 +339,7 @@ let embed = new RichEmbed();
 
 embed.setTitle(title);
 embed.setFooter(footer);
-embed.setColor(color);
+embed.setColor(random);
 embed.setDescription(description);
 embed.addField(zagolovok, content);
 //и так далее 
