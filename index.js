@@ -348,8 +348,8 @@ if (message.content.startsWith(`${prefix}suicide`)) {
                         }
     if (message.channel.type !== 'text') return;
     if (message.member.hasPermission('MANAGE_GUILD') || message.member.hasPermission('ADMINISTRATOR') || message.member.id === message.guild.owner.id) {
-        if (message.content === 'z!stop') {stop.push(message.guild.id); return message.channel.send('Готово');}
-        if (message.content === 'z!start') {stop.splice(stop.indexOf(message.guild.id),1); return message.channel.send('Готово');}
+        if (message.content === 's!stop') {stop.push(message.guild.id); return message.channel.send('Готово');}
+        if (message.content === 's!start') {stop.splice(stop.indexOf(message.guild.id),1); return message.channel.send('Готово');}
 
 
 if (message.content.startsWith("бот писать")){
