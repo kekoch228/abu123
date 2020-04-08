@@ -285,7 +285,7 @@ if (message.content.startsWith(`${prefix}bite`)) {
         message.channel.send(`Загрузка...`).then(msg => {
         const urls = ['https://pa1.narvii.com/6658/90444c213915b4bfcdb21a95d44de80f1366c3a9_hq.gif' ,'https://i.gifer.com/5Tl0.gif' ,'https://pa1.narvii.com/7108/db6928dceb85378d9dd45bd041bade660cf3953ar1-500-280_hq.gif' ,'https://i.gifer.com/7ULB.gif' ];
                 let embed = new Discord.RichEmbed()
-                    .setDescription(`${user} Поцеловал(а) ${user1}.`)
+                    .setDescription(`${user} Укусил(а) ${user1}.`)
                     .setImage(urls[Math.floor(Math.random() * urls.length)])
                     .setFooter('►СВЕРХКОНФА | s!bite @user', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
                     .setColor('RANDOM')
@@ -306,7 +306,7 @@ if (message.content.startsWith(`${prefix}lick`)) {
         message.channel.send(`Загрузка...`).then(msg => {
         const urls = ['https://pa1.narvii.com/6392/81c1903de9fc160246b3636beed16ab19081dfe7_hq.gif' ,'https://tenor.com/view/bruno-bucciarati-lick-face-anime-jjba-jojos-bizzare-adventures-gif-15031088' ,'https://gifs.gachi.ru/lick/55.gif' ,'https://gifs.gachi.ru/lick/53.gif'];
                 let embed = new Discord.RichEmbed()
-                    .setDescription(`${user} Поцеловал(а) ${user1}.`)
+                    .setDescription(`${user} Облизал(а) ${user1}.`)
                     .setImage(urls[Math.floor(Math.random() * urls.length)])
                     .setFooter('►СВЕРХКОНФА | s!lick @user', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
                     .setColor('RANDOM')
@@ -327,7 +327,7 @@ if (message.content.startsWith(`${prefix}poke`)) {
         message.channel.send(`Загрузка...`).then(msg => {
         const urls = ['https://i.gifer.com/OWba.gif' ,'https://i.gifer.com/JTRm.gif' ,'https://i.gifer.com/S00v.gif' ,'https://i.gifer.com/8xtR.gif'];
                 let embed = new Discord.RichEmbed()
-                    .setDescription(`${user} Поцеловал(а) ${user1}.`)
+                    .setDescription(`${user} Тыкнул(а) ${user1}.`)
                     .setImage(urls[Math.floor(Math.random() * urls.length)])
                     .setFooter('►СВЕРХКОНФА | s!poke @user', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
                     .setColor('RANDOM')
