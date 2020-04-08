@@ -160,7 +160,7 @@ if (message.content.startsWith(`${prefix}help`)){
     .setTitle("**КОМАНДЫ БОТА**")
     .setColor('RANDOM')
     .addField("Спиздить аву:", "`s!avatar <Пользователь>`")
-    .addField("Реакции:", "`s!kiss <Пользователь>;`\n`s!slap <Пользователь>;`\n`s!hug <Пользователь>;`\n`s!kill <Пользователь>;`\n`s!suicide;`\n`s!cry;`\n`s!happy.`")
+    .addField("Реакции:", "`s!kiss <Пользователь>;`\n`s!slap <Пользователь>;`\n`s!hug <Пользователь>;`\n`s!kill <Пользователь>;`\n`s!bite <Пользователь>;`\n`s!lick <Пользователь>;`\n`s!poke <Пользователь>;`\n`s!pat<Пользователь>;`\n`s!dance;`\n`s!smug;`\n`s!nom;`\n`s!suicide;`\n`s!cry;`\n`s!happy.`")
     .addField("Тест на гея:", "`s!gay <Пользователь>`")
     .addField("Совместимость:", "`s!ship <Пользователь>`")
     .addField("Измерить пенис:", "`s!penis <Пользователь>`")
@@ -274,6 +274,68 @@ if (message.content.startsWith(`${prefix}hug`)) {
                     msg.edit({embed});
     });
 }
+if (message.content.startsWith(`${prefix}bite`)) {
+    if(!args[0]) return message.channel.send('```s!bite @user\n\n Укусить участника.```');
+    let user = message.author;
+    let user1 = message.mentions.users.first();
+    if (!user1 || user1.id === user.id) {
+        user = bot.user;
+        user1 = message.author;
+    }
+        message.channel.send(`Загрузка...`).then(msg => {
+        const urls = ['https://pa1.narvii.com/6658/90444c213915b4bfcdb21a95d44de80f1366c3a9_hq.gif' ,'https://i.gifer.com/5Tl0.gif' ,'https://pa1.narvii.com/7108/db6928dceb85378d9dd45bd041bade660cf3953ar1-500-280_hq.gif' ,'https://i.gifer.com/7ULB.gif' ];
+                let embed = new Discord.RichEmbed()
+                    .setDescription(`${user} Поцеловал(а) ${user1}.`)
+                    .setImage(urls[Math.floor(Math.random() * urls.length)])
+                    .setFooter('►СВЕРХКОНФА | s!bite @user', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
+                    .setColor('RANDOM')
+                    .setTimestamp(); 
+                    msg.edit({embed});   
+        });
+}
+
+
+if (message.content.startsWith(`${prefix}lick`)) {
+    if(!args[0]) return message.channel.send('```s!lick @user\n\n Облизать участника.```');
+    let user = message.author;
+    let user1 = message.mentions.users.first();
+    if (!user1 || user1.id === user.id) {
+        user = bot.user;
+        user1 = message.author;
+    }
+        message.channel.send(`Загрузка...`).then(msg => {
+        const urls = ['https://pa1.narvii.com/6392/81c1903de9fc160246b3636beed16ab19081dfe7_hq.gif' ,'https://tenor.com/view/bruno-bucciarati-lick-face-anime-jjba-jojos-bizzare-adventures-gif-15031088' ,'https://gifs.gachi.ru/lick/55.gif' ,'https://gifs.gachi.ru/lick/53.gif'];
+                let embed = new Discord.RichEmbed()
+                    .setDescription(`${user} Поцеловал(а) ${user1}.`)
+                    .setImage(urls[Math.floor(Math.random() * urls.length)])
+                    .setFooter('►СВЕРХКОНФА | s!lick @user', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
+                    .setColor('RANDOM')
+                    .setTimestamp(); 
+                    msg.edit({embed});   
+        });
+}
+
+
+if (message.content.startsWith(`${prefix}poke`)) {
+    if(!args[0]) return message.channel.send('```s!poke @user\n\n Тыкать в участника.```');
+    let user = message.author;
+    let user1 = message.mentions.users.first();
+    if (!user1 || user1.id === user.id) {
+        user = bot.user;
+        user1 = message.author;
+    }
+        message.channel.send(`Загрузка...`).then(msg => {
+        const urls = ['https://i.gifer.com/OWba.gif' ,'https://i.gifer.com/JTRm.gif' ,'https://i.gifer.com/S00v.gif' ,'https://i.gifer.com/8xtR.gif'];
+                let embed = new Discord.RichEmbed()
+                    .setDescription(`${user} Поцеловал(а) ${user1}.`)
+                    .setImage(urls[Math.floor(Math.random() * urls.length)])
+                    .setFooter('►СВЕРХКОНФА | s!poke @user', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
+                    .setColor('RANDOM')
+                    .setTimestamp(); 
+                    msg.edit({embed});   
+        });
+}
+
 if (message.content.startsWith(`${prefix}suicide`)) {
         message.channel.send(`Загрузка...`).then(msg => {
         const urls = ['https://cdn60.picsart.com/182542841000202.gif?r1024x1024', 'https://images-ext-2.discordapp.net/external/PVHDexd-zGtZwfUY_ivDzIR7bDaHDygKZ8XmR9jUOd8/https/i.imgur.com/cp9ZF1A.gif?width=360&height=203', 'https://i.pinimg.com/originals/a5/f1/96/a5f196464ed42f493b95a600099e83b9.gif', 'https://media.giphy.com/media/WsWJZcJoxmLUk/giphy.gif', 'https://media1.tenor.com/images/47892bb88afc132a3afb775988208240/tenor.gif?itemid=5505166', 'https://data.whicdn.com/images/290510883/original.gif', 'https://78.media.tumblr.com/6824d7afa9302623f7d9956ccb68778d/tumblr_mp7y69GFbW1s9t463o1_500.gif', 'https://media1.tenor.com/images/a5db1c26b710b8b834d8265bf97a6c79/tenor.gif?itemid=5091706', 'http://data.whicdn.com/images/107593752/large.gif', 'https://i.pinimg.com/originals/03/43/e6/0343e651eded6629041d165f9c0d7cf7.gif', 'https://zippy.gfycat.com/EquatorialGleefulArabianhorse.gif', 'https://i.imgur.com/ysphsEK.gif', 'https://i.imgur.com/WSioKga.gif', 'https://i.imgur.com/4Bw9XTs.gif', 'https://i.imgur.com/Q0H6LO2.gif'];
