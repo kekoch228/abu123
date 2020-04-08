@@ -30,14 +30,14 @@ if(command === "smile" && ['248521740945195008'].includes(message.author.id)){
    let member = message.mentions.members.first();
    if(!member) member = message.member;
 
-   let replies = [`${member} не гей(натурал) `, `${member} на 1% гей 🌈`, `${member} на 2% гей 🌈`, `${member} на 3% гей 🌈`, `${member} на 4% гей 🌈`, `${member} на 5% гей 🌈`, `${member} на 10% гей 🌈`, `${member} на 15% гей 🌈`,  `${member} на 20% гей 🌈`, `${member} на 25% гей 🌈`, `${member} на 30% гей 🌈`, `${member} на 35% гей 🌈`, `${member} на 40% гей 🌈`, `${member} на 45% гей 🌈`, `${member} на 50% гей 🌈`, `${member} на 55% гей 🌈`, `${member} на 60% гей 🌈`, `${member} на 65% гей 🌈`, `${member} на 70% гей 🌈`, `${member} на 75% гей 🌈`, `${member} на 80% гей 🌈`, `${member} на 85% гей 🌈`, `${member} на 90% гей 🌈`, `${member} на 95% гей 🌈`, `${member} на 100% гей 🌈`, `${member} на 1488% гей 🌈`];
+   let replies = [`${member} не гей (натурал) `, `${member} на 1% гей 🌈`, `${member} на 2% гей 🌈`, `${member} на 3% гей 🌈`, `${member} на 4% гей 🌈`, `${member} на 5% гей 🌈`, `${member} на 10% гей 🌈`, `${member} на 15% гей 🌈`,  `${member} на 20% гей 🌈`, `${member} на 25% гей 🌈`, `${member} на 30% гей 🌈`, `${member} на 35% гей 🌈`, `${member} на 40% гей 🌈`, `${member} на 45% гей 🌈`, `${member} на 50% гей 🌈`, `${member} на 55% гей 🌈`, `${member} на 60% гей 🌈`, `${member} на 65% гей 🌈`, `${member} на 70% гей 🌈`, `${member} на 75% гей 🌈`, `${member} на 80% гей 🌈`, `${member} на 85% гей 🌈`, `${member} на 90% гей 🌈`, `${member} на 95% гей 🌈`, `${member} на 100% гей 🌈`, `${member} на 1488% гей 🌈`];
    let result = Math.floor((Math.random() * replies.length));
    let question = args.join(" "); 
 
    let gayembed = new Discord.RichEmbed()
 
    .setColor('RANDOM')
-   .addField("Тест на хея", replies[result])
+   .addField("Тест на гея", replies[result])
    .setFooter('►СВЕРХКОНФА | s!gay @user', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
    .setTimestamp(); 
    return message.channel.send(gayembed)
@@ -370,7 +370,37 @@ if (message.content.startsWith(`${prefix}dance`)) {
                 });
             }
 	
+if (message.content.startsWith(`${prefix}smug`)) {
+        message.channel.send(`Загрузка...`).then(msg => {
+        const urls = ['https://i.pinimg.com/originals/70/cc/98/70cc98296034768f8eee9ad124827ba2.gif', 'https://i.pinimg.com/originals/1f/e9/35/1fe93596a8a0f84078b936305b319c55.gif', 'https://steamuserimages-a.akamaihd.net/ugc/822313860013003060/A78582EDF025EE6C1B8563C3402315DEF506D9BF/', 'https://i.kym-cdn.com/photos/images/original/001/087/562/93c.gif'];
+                        let user1 = message.author;
+                        let embed = new Discord.RichEmbed()
+                        .setDescription(`${user1} Ухмыльнулся.`)
+                        .setImage(urls[Math.floor(Math.random() * urls.length)])
+                        .setFooter('►СВЕРХКОНФА | s!smug', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
+                        .setColor('RANDOM')
+                        .setTimestamp(); 
+                        msg.edit({embed});
+                });
+            }
 	
+	
+	
+	
+	if (message.content.startsWith(`${prefix}nom`)) {
+        message.channel.send(`Загрузка...`).then(msg => {
+        const urls = ['https://thumbs.gfycat.com/AnchoredBriskIcterinewarbler-size_restricted.gif', 'https://i.imgur.com/9AGURfF.gif', 'https://s020.radikal.ru/i710/1403/c4/79c1f80cdae7.gif', 'https://data.whicdn.com/images/50502591/original.gif'];
+                        let user1 = message.author;
+                        let embed = new Discord.RichEmbed()
+                        .setDescription(`${user1} Покушал.`)
+                        .setImage(urls[Math.floor(Math.random() * urls.length)])
+                        .setFooter('►СВЕРХКОНФА | s!nom', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
+                        .setColor('RANDOM')
+                        .setTimestamp(); 
+                        msg.edit({embed});
+                });
+            }
+			
 
 if (message.content.startsWith(`${prefix}suicide`)) {
         message.channel.send(`Загрузка...`).then(msg => {
