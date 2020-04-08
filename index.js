@@ -335,6 +335,42 @@ if (message.content.startsWith(`${prefix}poke`)) {
                     msg.edit({embed});   
         });
 }
+if (message.content.startsWith(`${prefix}pat`)) {
+    if(!args[0]) return message.channel.send('```s!pat @user\n\nПогладить участника.```');
+    let user = message.author;
+    let user1 = message.mentions.users.first();
+    if (!user1 || user1.id === user.id) {
+        user = bot.user;
+        user1 = message.author;
+    }
+        message.channel.send(`Загрузка...`).then(msg => {
+        const urls = ['https://pa1.narvii.com/6570/403a1b651aac3b0ab43cea521770c201ab6e2374_hq.gif' ,'https://99px.ru/sstorage/86/2016/12/image_860712161436018147981.gif', 'https://animegif.ru/up/photos/album/oct17/171021_2326.gif', 'https://lh3.googleusercontent.com/proxy/_UPSaqjqWySrAEQ46PwXmSzzJgJXbAvKbLBUSDfnGz004OH8fAhtpsOzNPg1H6fXdOY=s0-d'];
+                let embed = new Discord.RichEmbed()
+                    .setDescription(`${user} Погладил(а) ${user1}.`)
+                    .setImage(urls[Math.floor(Math.random() * urls.length)])
+                    .setFooter('►СВЕРХКОНФА | s!pat @user', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
+                    .setColor('RANDOM')
+                    .setTimestamp(); 
+                    msg.edit({embed});   
+        });
+}	
+	
+	
+if (message.content.startsWith(`${prefix}dance`)) {
+        message.channel.send(`Загрузка...`).then(msg => {
+        const urls = ['https://media1.tenor.com/images/8fdcda26512797826631511017a11f93/tenor.gif?itemid=9765182', 'https://thumbs.gfycat.com/SolidAliveGreyhounddog-small.gif' ,'https://i.kym-cdn.com/photos/images/newsfeed/001/115/816/936.gif' ,'https://i.gifer.com/Afdv.gif'];
+                        let user1 = message.author;
+                        let embed = new Discord.RichEmbed()
+                        .setDescription(`${user1} Танцует.`)
+                        .setImage(urls[Math.floor(Math.random() * urls.length)])
+                        .setFooter('►СВЕРХКОНФА | s!dance', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
+                        .setColor('RANDOM')
+                        .setTimestamp(); 
+                        msg.edit({embed});
+                });
+            }
+	
+	
 
 if (message.content.startsWith(`${prefix}suicide`)) {
         message.channel.send(`Загрузка...`).then(msg => {
