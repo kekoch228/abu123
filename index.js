@@ -486,10 +486,11 @@ if (message.content.startsWith("бот не писать")) {
             .setTimestamp(); 
         message.channel.send({embed});
   }
-
-if (message.content.startsWith(`${prefix}vkid`)){
+if (message.content.startsWith(`${prefix}vkid`)) {
     let user1 = message.author;
-     message.channel.send(`${user1} оформил вкид.)
+	let embed = new Discord.RichEmbed()
+     .setDescription(`${user1} Ооформил вкид.`)
+     message.channel.send(embed)
 	 }
    
 });
