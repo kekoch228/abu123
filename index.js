@@ -165,6 +165,7 @@ if (message.content.startsWith(`${prefix}help`)){
     .addField("Совместимость:", "`s!ship <Пользователь>`")
     .addField("Измерить пенис:", "`s!penis <Пользователь>`")
     .addField("Призвать участника:", "`s!summon <Пользователь>`")
+    .addField("Оформить вкид:",  "`s!vkid`")
    .setFooter('►СВЕРХКОНФА | s!help', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
    .setTimestamp(); 
     return message.channel.send(helpEmbed)
@@ -461,7 +462,10 @@ if (message.content.startsWith(`${prefix}suicide`)) {
                             });
                         }
 
-
+if (message.content.startsWith(`${prefix}vkid`)) {
+    let user1 = message.author;
+     message.channel.send(`${user1} оформил вкид.)
+	 }
 
 if (message.content.startsWith("бот писать")){
     message.delete();
