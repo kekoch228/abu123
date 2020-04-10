@@ -462,11 +462,6 @@ if (message.content.startsWith(`${prefix}suicide`)) {
                             });
                         }
 
-if (message.content.startsWith(`${prefix}vkid`)) {
-    let user1 = message.author;
-     message.channel.send(`${user1} оформил вкид.)
-	 }
-
 if (message.content.startsWith("бот писать")){
     message.delete();
     //Отвечает за то чтобы бот начал писать в вызваном чате.
@@ -492,6 +487,10 @@ if (message.content.startsWith("бот не писать")) {
         message.channel.send({embed});
   }
 
+if (message.content.startsWith(`${prefix}vkid`)){
+    let user1 = message.author;
+     message.channel.send(`${user1} оформил вкид.)
+	 }
    
 });
 
