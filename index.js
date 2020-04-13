@@ -166,6 +166,7 @@ if (message.content.startsWith(`${prefix}help`)){
     .addField("Измерить пенис:", "`s!penis <Пользователь>`")
     .addField("Призвать участника:", "`s!summon <Пользователь>`")
     .addField("Оформить вкид:",  "`s!vkid`")
+    .addField("Прикурить калик:", "`s!kalik`")
    .setFooter('►СВЕРХКОНФА | s!help', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
    .setTimestamp(); 
     return message.channel.send(helpEmbed)
@@ -365,6 +366,19 @@ if (message.content.startsWith(`${prefix}dance`)) {
                         .setDescription(`${user1} Танцует.`)
                         .setImage(urls[Math.floor(Math.random() * urls.length)])
                         .setFooter('►СВЕРХКОНФА | s!dance', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
+                        .setColor('RANDOM')
+                        .setTimestamp(); 
+                        msg.edit({embed});
+                });
+            }
+if (message.content.startsWith(`${prefix}kalik`)) {
+        message.channel.send(`Загрузка...`).then(msg => {
+        const urls = ['https://cdn.discordapp.com/attachments/428223641961103360/699308836019765288/zQHpfjWrWnY.png' ,'https://cdn.discordapp.com/attachments/428223641961103360/699308869922324520/7xsWyoT-NN4.png' ,'https://cdn.discordapp.com/attachments/428223641961103360/699309197229162506/-HopKjP_I-w.png'];
+                        let user1 = message.author;
+                        let embed = new Discord.RichEmbed()
+                        .setDescription(`${user1} 😋 словил кайфарик от плотной забивочки с двойным яблочком! 🍎🍏 `)
+                        .setImage(urls[Math.floor(Math.random() * urls.length)])
+                        .setFooter('►СВЕРХКОНФА | s!kalik', 'https://media.discordapp.net/attachments/428223641961103360/695322659700998194/FunDZNs_4.png?width=474&height=474')
                         .setColor('RANDOM')
                         .setTimestamp(); 
                         msg.edit({embed});
