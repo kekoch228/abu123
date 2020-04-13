@@ -160,7 +160,7 @@ if (message.content.startsWith(`${prefix}help`)){
     .setTitle("**КОМАНДЫ БОТА**")
     .setColor('RANDOM')
     .addField("Спиздить аву:", "`s!avatar <Пользователь>`")
-    .addField("Реакции:", "`s!kiss <Пользователь>;`\n`s!slap <Пользователь>;`\n`s!hug <Пользователь>;`\n`s!kill <Пользователь>;`\n`s!bite <Пользователь>;`\n`s!lick <Пользователь>;`\n`s!poke <Пользователь>;`\n`s!pat<Пользователь>;`\n`s!dance;`\n`s!smug;`\n`s!nom;`\n`s!suicide;`\n`s!cry;`\n`s!happy.`")
+    .addField("Реакции:", "`s!kiss <Пользователь>;`\n`s!slap <Пользователь>;`\n`s!hug <Пользователь>;`\n`s!kill <Пользователь>;`\n`s!bite <Пользователь>;`\n`s!lick <Пользователь>;`\n`s!poke <Пользователь>;`\n`s!pat <Пользователь>;`\n`s!dance;`\n`s!smug;`\n`s!nom;`\n`s!suicide;`\n`s!cry;`\n`s!happy.`")
     .addField("Тест на гея:", "`s!gay <Пользователь>`")
     .addField("Совместимость:", "`s!ship <Пользователь>`")
     .addField("Измерить пенис:", "`s!penis <Пользователь>`")
