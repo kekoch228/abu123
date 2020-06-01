@@ -16,7 +16,7 @@ bot.on('message', (message) => {
 const args = message.content.slice(prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 
-if(command === "say" && ['248521740945195008', '301020093247127552'].includes(message.author.id)){
+if(command === "say" && ['248521740945195008', '301020093247127552', '421650839648731136'].includes(message.author.id)){
     const sayMessage = args.join(" ");
     message.delete().catch(O_o=>{});
     message.channel.send(sayMessage);
