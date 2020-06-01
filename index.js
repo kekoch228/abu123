@@ -504,7 +504,8 @@ if (message.content.startsWith(`${prefix}vkid`)) {
     let user1 = message.author;
 	let embed = new Discord.RichEmbed()
      .setDescription(`${user1} Оформил вкид.`)
-     .setImage('https://images-ext-2.discordapp.net/external/mNYWi8okxwz5WQ6ByLwkJwncQ4SpVwVRHpeAJvIfH8g/https/media.discordapp.net/attachments/428290313162063883/698138438683066388/snus.png')
+     .setColor('RANDOM')
+     .setImage('https://cdn.discordapp.com/attachments/428252979280478228/717156092861350018/hqdefault.png')
      message.channel.send(embed)
 	 }
    
