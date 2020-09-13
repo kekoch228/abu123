@@ -4,10 +4,6 @@ const bot = new Discord.Client();
 const { RichEmbed } = require('discord.js');
 const prefix = "s!";
 
-bot.on('ready', () => {
-    bot.user.setPresence({ game: { name: `На ноги Сео`, type: 3 } }).catch();
-});
-
 
 bot.on('message', (message) => {
 
@@ -508,7 +504,6 @@ if (message.content.startsWith(`${prefix}vkid`)) {
      .setImage('https://cdn.discordapp.com/attachments/428252979280478228/717156092861350018/hqdefault.png')
      message.channel.send(embed)
 	 }
-   
 });
 
 bot.login(process.env.BOT_TOKEN);
